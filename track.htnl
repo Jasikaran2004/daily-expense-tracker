@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📝 என் நாள் செலவுகள்</h1>
+
+    <form id="expense-form">
+        <input type="number" id="amount" placeholder="செலவு தொகை (₹)" required>
+        <input type="text" id="description" placeholder="விவரம்" required>
+        <input type="date" id="date" required>
+        <button type="submit">சேமி</button>
+    </form>
+
+    <h2>இன்றைய செலவுகள்:</h2>
+    <ul id="expense-list"></ul>
+
+    <h3>மொத்தம் இன்று செலவு: ₹<span id="total">0</span></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
